@@ -1,36 +1,31 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 
 /**
- * main - program that print all possible combinations of two two-digit numbers
- *
- * Return: 0
+ * main - prints all possible combinations of two two-digit numbers
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int a;
-	int b;
+	int i, j;
 
-	for (a = 0 ; a < 100 ; a++)
+	for (i = 0; i < 100; i++)
 	{
-		for (b = 0 ; b < 100 ; b++)
+		for (j = 0; j < 100; j++)
 		{
-			if (a < b)
+			if (i < j)
 			{
-				putchar((a / 10) + '0');
-				putchar((a % 10) + '0');
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
 				putchar(' ');
-				putchar((b / 10) + '0');
-				putchar((b % 10) + '0');
-				if (a != 98 && b != 99)
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+				if (i != 98 || j != 99)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
+
 		}
 	}
 	putchar('\n');
