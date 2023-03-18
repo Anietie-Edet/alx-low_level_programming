@@ -13,15 +13,13 @@ int main(void)
 
 	for (a = 0 ; a < 100 ; a++)
 	{
-		for (b = 0 ; b < 100 ; b++)
+		for (b = 1 ; b < 100 ; b++)
 		{
-			if (a < b)
+			if (a < b && a != b)
 			{
-				putchar((a / 10) + 48);
-				putchar((a % 10) + 48);
+				putchar(a + '0');
 				putchar(' ');
-				putchar((b / 10) + 48);
-				putchar((b % 10) + 48);
+				putchar(b + '0');
 				if (a != 98 && b != 99)
 				{
 					putchar(',');
