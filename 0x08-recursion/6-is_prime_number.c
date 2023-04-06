@@ -20,7 +20,7 @@ int is_prime_number(int n)
 /**
  * prime_number - calculates for a prime number
  * @a: represents value of n
- * @b: iterates to value of n
+ * @c: iterates to value of n
  * Return: 1 of successful, otherwise 0
  */
 
