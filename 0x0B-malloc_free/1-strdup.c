@@ -16,7 +16,6 @@ char *_strdup(char *str)
 	unsigned int p;
 	unsigned int length;
 
-	replica = malloc(sizeof(char));
 
 	p = 0;
 	length = 0;
