@@ -27,7 +27,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 	/* get the length of the input string*/
-	while (str[length])
+	while (str[length] != '\0')
 		length++;
 	/* allocate memory for the new string (+1 for null terminator*/
 	replica = malloc((sizeof(char) * length) + 1);
