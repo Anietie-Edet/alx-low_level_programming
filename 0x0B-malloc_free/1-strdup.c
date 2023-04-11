@@ -30,7 +30,7 @@ char *_strdup(char *str)
 	while (str[length])
 		length++;
 	/* allocate memory for the new string (+1 for null terminator*/
-	replica = malloc(sizeof(char) * (length + 1));
+	replica = malloc((sizeof(char) * length) + 1);
 	/* check of malloc failed to allocate memory*/
 	if (replica == NULL)
 		return (NULL);
