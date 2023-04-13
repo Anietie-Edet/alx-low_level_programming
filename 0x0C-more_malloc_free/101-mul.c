@@ -25,7 +25,7 @@ int main(int argc, char *argv[])
 	{
 		for (b = 0; argv[a][b] != '\0'; b++)
 		{
-			if (argv[a][b] < 48 || argv[a][b] > 57)
+			if (argv[a][b] > 57 || argv[a][b] < 48)
 			{
 				printf("Error\n");
 					exit(98);
@@ -33,6 +33,6 @@ int main(int argc, char *argv[])
 		}
 	}
 	mul = atol(argv[1]) * atol(argv[2]);
-			printf("%ld\n", mul);
+			printf("%lu\n", mul);
 			return (0);
 }
