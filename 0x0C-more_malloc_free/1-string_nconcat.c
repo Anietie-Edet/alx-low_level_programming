@@ -4,11 +4,11 @@
 
 /**
  * *string_nconcat - function that concatenates two strings
- * @s1: string
- * @s2: string
- * @n: bytes
+ * @s1: string1
+ * @s2: string2
+ * @n: bytes value
  *
- * Return: pointer
+ * Return: pointer to memory
  */
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
